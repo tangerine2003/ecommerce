@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  weatherurl: 'https://api.darksky.net/forecast/30371358b01a5036035c4211ca1fa85f/32.1296768,-81.29041029999999'
 };
 
 /*
