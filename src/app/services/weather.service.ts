@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
-import { observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { CurrentWeather, DailyWeather } from '../models/weather';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+
+const api = environment.weatherurl;
+
 export class WeatherService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  getWeatherData() {
-
+  public getWeather() {
+    return this.httpClient.get(api);
   }
 }
