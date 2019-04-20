@@ -12,6 +12,8 @@ import { CardModule } from 'primeng/card';
 
 
 import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { GardenComponent } from './garden/garden.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule } from '@a
     AppComponent,
     WeatherComponent,
     NavbarComponent,
-    DayCardComponent
+    DayCardComponent,
+    HomeComponent,
+    GardenComponent
 
   ],
   imports: [
