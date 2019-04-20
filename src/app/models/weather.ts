@@ -1,4 +1,5 @@
 export interface CurrentWeather {
+    today: string;
     lattitude: number;
     longitude: number;
     timezone: string;
@@ -13,6 +14,7 @@ export interface CurrentWeather {
 }
 
 export interface DailyWeather {
+    dayofweek: string;
     summary: string;
     icon: string;
     precipType: string;
