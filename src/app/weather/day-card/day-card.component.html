@@ -1,11 +1,12 @@
-<p-card header="Day of the Week" subheader="Additional Info" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+<p-card  [style]="{width: '360px'}" styleClass="ui-card-shadow">
   <div class="ui-card-shadow ui-card ui-widget-content ui-corner-all" style="width: 360px;">
-        <p-header>{{dayofweek | date}}</p-header>
-        <div>{{dayofweek | date:'EEEE'}}</div>
-        <p-footer>
-      
-        </p-footer>
-
+    <p-header>{{dayofweek | date:'EEEE'}}</p-header>
+    <div>{{dayofweek | date}}</div>
+    <p-footer>
+        <li> Humitidy: 80%</li>
+        <li>Precipitation: 5</li>
+        <li>High: 90</li>
+        <li>Low: 10</li>
+    </p-footer>
   </div>
-
 </p-card>
