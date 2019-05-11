@@ -19,7 +19,7 @@ export class WeatherComponent implements OnInit {
       window.navigator.geolocation.getCurrentPosition(pos => {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
-        this.obj = this.weatherService.getWeather(this.lat, this.lng);
+        // this.obj = this.weatherService.getWeather(this.lat, this.lng);
       });
     }
   }

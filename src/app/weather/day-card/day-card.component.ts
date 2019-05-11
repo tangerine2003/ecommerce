@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { CardModule } from 'primeng/card';
+import { Component, OnInit, Input } from '@angular/core';
 import { DatePipe } from '@angular/common';
+import { Days } from '../../models/days';
 
 
 @Component({
@@ -11,11 +11,16 @@ import { DatePipe } from '@angular/common';
 })
 export class DayCardComponent implements OnInit {
 
-  dayofweek: number = Date.now();
+  @Input() day: number;
+
+  dayofweek: object;
 
   constructor() { }
 
   ngOnInit() {
+    this.dayofweek = new Days(this.day);
+    console.log(this.dayofweek);
+
   }
 
 }

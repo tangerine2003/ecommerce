@@ -1,0 +1,6 @@
+{
+    "/forecast": {
+        "target": "https://api.darksky.net",
+        "secure": false
+    }
+}

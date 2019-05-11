@@ -1,7 +1,7 @@
 <p-card  [style]="{width: '360px'}" styleClass="ui-card-shadow">
   <div class="ui-card-shadow ui-card ui-widget-content ui-corner-all" style="width: 360px;">
-    <p-header>{{dayofweek | date:'EEEE'}}</p-header>
-    <div>{{dayofweek | date}}</div>
+    <p-header>{{dayofweek.nextDay | date:'EEEE'}}</p-header>
+    <div>{{dayofweek.nextDay | date:'LLL dd'}}</div>
     <p-footer>
         <li> Humitidy: 80%</li>
         <li>Precipitation: 5</li>
