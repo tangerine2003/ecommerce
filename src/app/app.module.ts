@@ -16,6 +16,8 @@ import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule } from '@a
 import { HomeComponent } from './home/home.component';
 import { GardenComponent } from './garden/garden.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     DayCardComponent,
     HomeComponent,
     GardenComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactUsComponent,
+    BlogComponent
 
   ],
   imports: [
