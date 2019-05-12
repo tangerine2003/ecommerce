@@ -2,25 +2,34 @@
   {{"Lattitude: " + lat + " , " + "Longitude: " +  lng}}
 </p>
 
+<!--6 day forecast card deck panel-->
 <div class="container">
   <div class="row">
-    <div class="col-2">
-      <app-day-card [day]="1"></app-day-card>
-    </div>
-    <div class="col-2">
-      <app-day-card [day]="2"></app-day-card>
-    </div>
-    <div class="col-2">
-      <app-day-card [day]="3"></app-day-card>
-    </div>
-    <div class="col-2">
-      <app-day-card [day]="4"></app-day-card>
-    </div>
-    <div class="col-2">
-      <app-day-card [day]="5"></app-day-card>
-    </div>
-    <div class="col-2">
-      <app-day-card [day]="6"></app-day-card>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-12 uis-lg-12">
+        <p-panel header=" 6 Day Forecast" class="ng-tns-c2-43">
+          <div class="card-deck">
+            <div class="col">
+              <app-day-card [day]="1"></app-day-card> 
+            </div>
+            <div class="col">
+              <app-day-card [day]="2"></app-day-card>
+            </div>
+            <div class="col">
+              <app-day-card [day]="3"></app-day-card>
+            </div>
+            <div class="col">
+              <app-day-card [day]="4"></app-day-card>
+            </div>
+            <div class="col">
+              <app-day-card [day]="5"></app-day-card>
+            </div>
+            <div class="col">
+              <app-day-card [day]="6"></app-day-card>
+            </div>
+          </div>
+        </p-panel>
+      </div>
     </div>
   </div>
 </div>
