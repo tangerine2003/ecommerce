@@ -1,3 +1,29 @@
-<p>
-  contact-us works!
-</p>
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Contact Us!</h1>
+        <section class="section">
+          <div class="container">
+            <form (ngSubmit)="processForm()">
+              <!-- name -->
+              <div class="field">
+                <input type="text" name="name" class="input" placeholder="Your Name">
+              </div>
+            
+              <!-- email -->
+              <div class="field">
+                <input type="email" name="email" class="input" placeholder="Your Email">
+              </div>
+            
+              <!-- message -->
+              <div class="field">
+                <textarea class="textarea" name="message" placeholder="What's on your mind?"></textarea>
+              </div>
+            
+              <button type="submit" class="button is-danger is-large">Submit</button>
+            </form> 
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
