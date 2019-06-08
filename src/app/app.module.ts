@@ -19,6 +19,7 @@ import { GardenComponent } from './garden/garden.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BlogComponent } from './blog/blog.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { BlogComponent } from './blog/blog.component';
     GardenComponent,
     SidebarComponent,
     ContactUsComponent,
-    BlogComponent
+    BlogComponent,
+    AdminComponent
 
   ],
   imports: [
